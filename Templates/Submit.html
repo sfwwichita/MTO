@@ -11,8 +11,8 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .pointer {
-      height: 45px;
+   .pointer {
+      height: 6.25%;
       position: absolute;
       left: 21.9%;
       top: 64.1%;
@@ -20,7 +20,7 @@
       z-index: 1;
     }
     .check1 {
-      height: 20px;
+      height: 2.7778%;
       position: absolute;
       left: 21.25%;
       top: 49%;
@@ -28,7 +28,7 @@
       z-index: 1;
     }
     .check2 {
-      height: 20px;
+      height: 2.7778%;
       position: absolute;
       left: 21.25%;
       top: 54.5%;
@@ -36,7 +36,7 @@
       z-index: 1;
     }
     .check3 {
-      height: 20px;
+      height: 2.7778%;
       position: absolute;
       left: 21.25%;
       top: 60.1%;
@@ -44,34 +44,37 @@
       z-index: 1;
     }
     .next {
-      padding: 18px 13px;
+      height: 5%; 
+      width: 2.03125%;
       position: absolute;
       background-color: transparent;
       border-color: transparent;
-      margin-top: 652px;
-      margin-left: 255px;
+      top: 91.756%;
+      left: 20.922%;
       z-index: 1;
     }
     .back {
-      padding: 18px 10px;
+      height: 5%; 
+      width: 2.03125%;
       position: absolute;
       background-color: transparent;
       border-color: transparent;
-      margin-top: 652px;
-      margin-left: 210px;
+      top: 91.756%;
+      left: 17.40625%;
       z-index: 1;
     }
     .home {
-      padding: 20px 20px;
+      height: 5.5556%;
+      width: 3.125%;
       position: absolute;
       background-color: transparent;
       border-color: transparent;
-      margin-top: 651px;
-      margin-left: 12px;
+      top: 91.417%;
+      left: 1.9375%;
       z-index: 1;
     }
     .rover {
-      height: 450px;
+      height: 62.5%;
       position: absolute;
       left: 40%;
       top: 25%;
@@ -79,48 +82,66 @@
       display: none;
     }
     .submit {
-      height: 70px;
-      width: 325px;
-      border-radius: 30px;
+      height: 9.7222%;
+      width: 25.391%;
+      border-radius: 9.2308%/42.857%;
       background-color: black;
       border-color: white;
       z-index: 1;
       color: white;
       display: block;
-      font-size: 23px;
+      font-size: 1.7969vw;
       position: absolute;
-      margin-top: 560px;
-      margin-left: 350px;
+      top: 77.778%;
+      left: 27.344%;
     }
     .etchbackground {
-        height: 200px;
-        width: 200px;
-        border-radius: 100px;
+        height: 27.778%;
+        width: 15.625%;
+        border-radius: 50%;
         position: absolute;
-        margin-top: 90px;
-        margin-left: 975px;
+        top: 13.5%;
+        left: 76.672%;
         display: none;
     }
     .etchword {
-      height: 35px;
-      width: 100px;
-      border-radius: 27px;
+      height: 4.8611%;
+      width: 7.8125%;
+      border-radius: 27%/77.143%;
       background-color: black;
       border-color: transparent;
       z-index: 1;
       color: white;
       display: block;
       position: absolute;
-      margin-top: 50px;
-      margin-left: 1025px;
+      top: 7.9444%;
+      left: 80.578%;
     }
     .etch {
-        height: 70px;
+        height: 9.7222%;
         position: absolute;
-        margin-top: 155px;
-        margin-left: 1007px;
+        top: 22.528%;
+        left: 79.172%;
         display: none;
     }
+    /* Transitions */
+    .transition-1 {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 101;
+      background-color: black;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.01s ease-out;
+    } 
+
+    .transition-1.is-active {
+      opacity: 1;
+      pointer-events: all;
+    } 
   </style>
 </head>
 <body>
