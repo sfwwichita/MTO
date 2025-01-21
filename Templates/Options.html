@@ -113,6 +113,22 @@
       top: 67.667%;
       left: 28.906%;
     }
+    .speaker {
+      height: 30%;
+      position: absolute;
+      left: 78%;
+      top: 13%;
+      z-index: 0;
+      display: none;
+    }
+    .fan {
+      height: 30%;
+      position: absolute;
+      left: 73%;
+      top: 13%;
+      z-index: 0;
+      display: none;
+    }
     /* Transitions */
     .transition-1 {
       position: fixed;
@@ -165,7 +181,11 @@
      <img id="Blue Rover" src='../Rover Iso View with Parts Generic Kit - Blue.png' alt="Blue Rover" class="rover"/>
   <!-- Black Rover -->
      <img id="Black Rover" src='../Rover Iso View with Parts Generic Kit - Black.png' alt="Black Rover" class="rover"/>
-  
+  <!-- Speaker -->
+     <img id="Speaker" src='../Speaker.png' alt="Speaker" class="speaker"/>
+  <!-- Fan -->
+     <img id="Fan" src='../Fan.png' alt="Fan" class="fan"/>
+
 
 </body>
 
@@ -193,23 +213,31 @@
   var Option2=document.getElementById('Option 2');
   var Option3=document.getElementById('Option 3');
   var Option4=document.getElementById('Option 4');
+  var Speaker=document.getElementById('Speaker');
+  var Fan=document.getElementById('Fan');
   Option1.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
+     Speaker.style.display='none';
+     Fan.style.display='block';
      Option1.className = "select pos1";
      sessionStorage.setItem('option','1');
   }
   Option2.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
+     Fan.style.display='none';
+     Speaker.style.display='block';
      Option2.className = "select pos2";
      sessionStorage.setItem('option','2');
   }
   Option3.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
+     [Speaker, Fan].forEach(i=>{i.style.display='none';});
      Option3.className = "select pos3";
      sessionStorage.setItem('option','3');
   }
   Option4.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
+     [Speaker, Fan].forEach(i=>{i.style.display='none';});
      Option4.className = "select pos4";
      sessionStorage.setItem('option','4');
   }
