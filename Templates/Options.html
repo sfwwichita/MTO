@@ -44,6 +44,7 @@
       top: 91.756%;
       left: 20.922%;
       z-index: 1;
+      display: none;
     }
     .back {
       height: 5%; 
@@ -213,6 +214,7 @@
   var Option2=document.getElementById('Option 2');
   var Option3=document.getElementById('Option 3');
   var Option4=document.getElementById('Option 4');
+  var Next=document.getElementById('Next Page');
   var Speaker=document.getElementById('Speaker');
   var Fan=document.getElementById('Fan');
   Option1.onclick = function () {
@@ -221,6 +223,7 @@
      Fan.style.display='block';
      Option1.className = "select pos1";
      sessionStorage.setItem('option','1');
+     Next.style.display = 'block';
   }
   Option2.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
@@ -228,18 +231,21 @@
      Speaker.style.display='block';
      Option2.className = "select pos2";
      sessionStorage.setItem('option','2');
+     Next.style.display = 'block';
   }
   Option3.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
      [Speaker, Fan].forEach(i=>{i.style.display='none';});
      Option3.className = "select pos3";
      sessionStorage.setItem('option','3');
+     Next.style.display = 'block';
   }
   Option4.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
      [Speaker, Fan].forEach(i=>{i.style.display='none';});
      Option4.className = "select pos4";
      sessionStorage.setItem('option','4');
+     Next.style.display = 'block';
   }
   /* Transitions */
   window.onload = () => {
