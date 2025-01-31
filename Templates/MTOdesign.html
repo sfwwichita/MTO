@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <style>
     body {
-    background-image: url('../Table Background.png');
+    background-image: url('../Table Background Next Only.svg');
     background-color: black;
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -36,6 +36,7 @@
     z-index: 0;
     color: white;
     display: block;
+    font-family: 'Open Sans';
   }
   .select {
     height: 4.7222%;
@@ -46,6 +47,32 @@
     z-index: 0;
     color: black;
     display: block;
+    font-family: 'Open Sans';
+  }
+  .unavailable {
+    height: 4.7222%;
+    width: 11.406%;
+    border-radius: 13.699%/58.824%;
+    background-color: grey;
+    border-color: white;
+    opacity: 0.5;
+    z-index: 0;
+    color: white;
+    display: block;
+    font-family: 'Open Sans';
+  }
+  .prompt {
+    border-radius: 13.699%/58.824%;
+    background-color: black;
+    border-color: transparent;
+    z-index: 0;
+    color: white;
+    display: block;
+    font-family: 'Open Sans';
+    scale: 1.5;
+    position: absolute;
+    top: 32.444%;
+    left: 28.544%
   }
   .red {
     position: absolute;
@@ -184,6 +211,17 @@
     left: 28.344%;
     z-index: 1;
   }
+    .pageflip {
+    height: 2.5%; 
+    width: 12%;
+    position: absolute;
+    background-color: transparent;
+    border-color: white;
+    top: 54.5%;
+    left: 10.922%;
+    z-index: 2;
+    display: none;
+  }
   /* Transitions */
   .transition-1 {
     position: fixed;
@@ -248,17 +286,21 @@
   <!-- Button for Orange-->
     <button id="Orange Button" class="unselect orange">Orange</button>
   <!-- Button for Yellow-->
-    <button id="Yellow Button" class="unselect yellow">Yellow</button>
+    <button id="Yellow Button" class="unavailable yellow">Yellow</button>
   <!-- Button for Green-->
     <button id="Green Button" class="unselect green">Green</button>
   <!-- Button for Blue-->
     <button id="Blue Button" class="unselect blue">Blue</button>
   <!-- Button for Purple-->
-    <button id="Purple Button" class="unselect purple">Purple</button>
+    <button id="Purple Button" class="unavailable purple">Purple</button>
   <!-- Button for Black-->
     <button id="Black Button" class="unselect black">Black</button>
+  <!-- Prompt -->
+    <button id="Prompt" class="prompt">Select One Color</button>
   <!-- Next Page Button-->
     <a id="Next Page" href="IconChoice.html" class="next"></a>
+  <!-- Icon Page Button-->
+    <a id="Icon Page" href="IconChoice.html" class="pageflip"></a>
   <!-- Back Page Button-->
     <button id="Back Page" onclick="document.location='C:/Users/LMOTT/Downloads/MTO Code/Templates/Table_Page.html'" class="back"></button>
   <!-- Home Page Button-->
@@ -277,6 +319,7 @@
     var BlackRover=document.getElementById('Black Rover');
     var OutOfStock=document.getElementById('Out Of Stock');
     var Next=document.getElementById('Next Page');
+    var IconPage=document.getElementById('Icon Page');
     var OrangeButton=document.getElementById('Orange Button');
     var YellowButton=document.getElementById('Yellow Button');
     var GreenButton=document.getElementById('Green Button');
@@ -290,6 +333,7 @@
       RedButton.classList.replace('unselect','select');
       RedRover.style.display = 'block';
       Next.style.display = 'block';
+      IconPage.style.display = 'block';
       sessionStorage.setItem('color','Red');
     }
     OrangeButton.onclick= function(){
@@ -298,6 +342,7 @@
       OrangeButton.classList.replace('unselect','select');
       OrangeRover.style.display = 'block';
       Next.style.display = 'block';
+      IconPage.style.display = 'block';
       sessionStorage.setItem('color','Orange');
     }
     YellowButton.onclick= function(){
@@ -307,6 +352,7 @@
       YellowRover.style.display = 'block';
       OutOfStock.style.display = 'block';
       Next.style.display = 'none';
+      IconPage.style.display = 'none';
     }
     GreenButton.onclick= function(){
       [OutOfStock, GreyRover, RedRover, OrangeRover, YellowRover, GreenRover, BlueRover, PurpleRover, BlackRover].forEach(i=>{i.style.display='none';});
@@ -314,6 +360,7 @@
       GreenButton.classList.replace('unselect','select');
       GreenRover.style.display = 'block';
       Next.style.display = 'block';
+      IconPage.style.display = 'block';
       sessionStorage.setItem('color','Green');
     }
     BlueButton.onclick= function(){
@@ -322,6 +369,7 @@
       BlueButton.classList.replace('unselect','select');
       BlueRover.style.display = 'block';
       Next.style.display = 'block';
+      IconPage.style.display = 'block';
       sessionStorage.setItem('color','Blue');
     }
     PurpleButton.onclick= function(){
@@ -331,6 +379,7 @@
       PurpleRover.style.display = 'block';
       OutOfStock.style.display = 'block';
       Next.style.display = 'none';
+      IconPage.style.display = 'none';
     }
     BlackButton.onclick= function(){
       [OutOfStock, GreyRover, RedRover, OrangeRover, YellowRover, GreenRover, BlueRover, PurpleRover, BlackRover].forEach(i=>{i.style.display='none';});
@@ -338,6 +387,7 @@
       BlackButton.classList.replace('unselect','select');
       BlackRover.style.display = 'block';
       Next.style.display = 'block';
+      IconPage.style.display = 'block';
       sessionStorage.setItem('color','Black');
     }
 
