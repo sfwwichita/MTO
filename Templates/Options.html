@@ -66,6 +66,27 @@
       left: 1.9375%;
       z-index: 1;
     }
+     .pageflip {
+    height: 2.5%; 
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 2;
+    }
+    .pageflipnext {
+      width: 15%;
+      position: absolute;
+      top: 65.7%;
+      left: 7.922%;
+      display: none;
+    }
+    .pageflipback {
+      width: 12%;
+      position: absolute;
+      top: 54.6%;
+      left: 10.922%;
+      display: block;
+    }
     .rover {
       height: 55.556%;
       position: absolute;
@@ -74,7 +95,7 @@
       z-index: 0;
       display: none;
     }
-    .unselect {
+   .unselect {
       height: 5.5556%;
       width: 19.531%;
       border-radius: 10.8%/67.5%;
@@ -83,6 +104,7 @@
       z-index: 1;
       color: white;
       display: block;
+      font-family: 'Open Sans';
     }
     .select {
       height: 5.5556%;
@@ -93,6 +115,7 @@
       z-index: 1;
       color: black;
       display: block;
+      font-family: 'Open Sans';
     }
     .pos1 {
       position: absolute;
@@ -160,8 +183,12 @@
      <img id="Check2" src='../Check.png' alt="Check2" class="check2" />
   <!-- Next Page Button -->
      <a id="Next Page" href="Submit.html" class="next"></a>
+  <!-- Submit Page Button -->
+     <a id="Submit Page" href="Submit.html" class="pageflip pageflipnext"></a>
   <!-- Back Page Button -->
      <a href="IconChoice.html" class="back"></a>
+  <!-- Icon Page Button -->
+     <a href="IconChoice.html" class="pageflip pageflipback"></a>
   <!-- Home Page Button -->
      <button id="Home Page" onclick="document.location='https://sfwwichita.github.io/MTO/Templates/MTOdesign.html'" class="home"></button>
   <!-- Option 1 -->
@@ -215,6 +242,7 @@
   var Option3=document.getElementById('Option 3');
   var Option4=document.getElementById('Option 4');
   var Next=document.getElementById('Next Page');
+  var SubmitPage=document.getElementById('Submit Page');
   var Speaker=document.getElementById('Speaker');
   var Fan=document.getElementById('Fan');
   Option1.onclick = function () {
@@ -224,6 +252,7 @@
      Option1.className = "select pos1";
      sessionStorage.setItem('option','1');
      Next.style.display = 'block';
+     SubmitPage.style.display = 'block';
   }
   Option2.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
@@ -232,6 +261,7 @@
      Option2.className = "select pos2";
      sessionStorage.setItem('option','2');
      Next.style.display = 'block';
+     SubmitPage.style.display = 'block';
   }
   Option3.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
@@ -239,6 +269,7 @@
      Option3.className = "select pos3";
      sessionStorage.setItem('option','3');
      Next.style.display = 'block';
+     SubmitPage.style.display = 'block';
   }
   Option4.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
@@ -246,6 +277,7 @@
      Option4.className = "select pos4";
      sessionStorage.setItem('option','4');
      Next.style.display = 'block';
+     SubmitPage.style.display = 'block';
   }
   /* Transitions */
   window.onload = () => {
