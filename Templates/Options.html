@@ -5,33 +5,33 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <style>
     body {
-      background-image: url('../Table Background.png');
+      background-image: url('../Table Background Next and Back.svg');
       background-color: black;
       background-attachment:fixed;
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .pointer {
+   .pointer {
       height: 6.25%;
       position: absolute;
       left: 21.9%;
-      top: 58.5%;
+      top: 58.2%;
       display: block;
       z-index: 1;
     }
     .check1 {
       height: 2.7778%;
       position: absolute;
-      left: 21.25%;
-      top: 49%;
+      left: 21.30%;
+      top: 48.75%;
       display: block;
       z-index: 1;
     }
     .check2 {
       height: 2.7778%;
       position: absolute;
-      left: 21.25%;
-      top: 54.5%;
+      left: 21.30%;
+      top: 54.25%;
       display: block;
       z-index: 1;
     }
@@ -53,7 +53,7 @@
       background-color: transparent;
       border-color: transparent;
       top: 91.756%;
-      left: 17.40625%;
+      left: 17.35625%;
       z-index: 1;
     }
     .home {
@@ -66,7 +66,7 @@
       left: 1.9375%;
       z-index: 1;
     }
-     .pageflip {
+    .pageflip {
     height: 2.5%; 
     position: absolute;
     background-color: transparent;
@@ -75,29 +75,46 @@
     }
     .pageflipnext {
       width: 15%;
-      position: absolute;
-      top: 65.7%;
+      top: 65.6%;
       left: 7.922%;
       display: none;
     }
     .pageflipback {
       width: 12%;
-      position: absolute;
-      top: 54.6%;
+      top: 54.5%;
+      left: 10.922%;
+      display: block;
+    }
+    .pageflipcolor {
+      width: 12%;
+      top: 48.9%;
       left: 10.922%;
       display: block;
     }
     .rover {
-      height: 55.556%;
+      height: 69.444%;
       position: absolute;
-      left: 54%;
-      top: 40%;
+      left: 46%;
+      top: 20%;
       z-index: 0;
       display: none;
     }
-   .unselect {
-      height: 5.5556%;
-      width: 19.531%;
+    .prompt {
+    border-radius: 13.699%/58.824%;
+    background-color: black;
+    border-color: transparent;
+    z-index: 0;
+    color: white;
+    display: block;
+    font-family: 'Open Sans';
+    scale: 1.5;
+    position: absolute;
+    top: 38.444%;
+    left: 29.044%
+    }
+    .unselect {
+      height: 4.7222%;
+      width: 13.406%;
       border-radius: 10.8%/67.5%;
       background-color: black;
       border-color: white;
@@ -107,8 +124,8 @@
       font-family: 'Open Sans';
     }
     .select {
-      height: 5.5556%;
-      width: 19.531%;
+      height: 4.7222%;
+      width: 13.406%;
       border-radius: 10.8%/67.5%;
       background-color: white;
       border-color: white;
@@ -119,39 +136,23 @@
     }
     .pos1 {
       position: absolute;
-      top: 42.667%;
+      top: 46.42685%;
       left: 28.906%;
     }
     .pos2 {
         position: absolute;
-        top: 51%;
+        top: 52.91995%;
         left: 28.906%;
     }
     .pos3 {
       position: absolute;
-      top: 59.333%;
+      top: 59.41305%;
       left: 28.906%;
     }
     .pos4 {
       position: absolute;
-      top: 67.667%;
+      top: 65.90615%;
       left: 28.906%;
-    }
-    .speaker {
-      height: 30%;
-      position: absolute;
-      left: 78%;
-      top: 13%;
-      z-index: 0;
-      display: none;
-    }
-    .fan {
-      height: 30%;
-      position: absolute;
-      left: 73%;
-      top: 13%;
-      z-index: 0;
-      display: none;
     }
     /* Transitions */
     .transition-1 {
@@ -189,8 +190,12 @@
      <a href="IconChoice.html" class="back"></a>
   <!-- Icon Page Button -->
      <a href="IconChoice.html" class="pageflip pageflipback"></a>
+  <!-- Color Page Button -->
+     <a href="MTOdesign.html" class="pageflip pageflipcolor"></a>
   <!-- Home Page Button -->
-     <button id="Home Page" onclick="document.location='https://sfwwichita.github.io/MTO/Templates/MTOdesign.html'" class="home"></button>
+     <button id="Home Page" onclick="document.location='C:/Users/LMOTT/Downloads/MTO Code/Templates/Table_Page.html'" class="home"></button>
+  <!-- Prompt -->
+     <button id="Prompt" class="prompt">SELECT ONE KIT OPTION</button>
   <!-- Option 1 -->
      <button id="Option 1" class="unselect pos1">Fan</button>
   <!-- Option 2 -->
@@ -209,11 +214,6 @@
      <img id="Blue Rover" src='../Rover Iso View with Parts Generic Kit - Blue.png' alt="Blue Rover" class="rover"/>
   <!-- Black Rover -->
      <img id="Black Rover" src='../Rover Iso View with Parts Generic Kit - Black.png' alt="Black Rover" class="rover"/>
-  <!-- Speaker -->
-     <img id="Speaker" src='../Speaker.png' alt="Speaker" class="speaker"/>
-  <!-- Fan -->
-     <img id="Fan" src='../Fan.png' alt="Fan" class="fan"/>
-
 
 </body>
 
