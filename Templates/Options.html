@@ -243,12 +243,8 @@
   var Option4=document.getElementById('Option 4');
   var Next=document.getElementById('Next Page');
   var SubmitPage=document.getElementById('Submit Page');
-  var Speaker=document.getElementById('Speaker');
-  var Fan=document.getElementById('Fan');
   Option1.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
-     Speaker.style.display='none';
-     Fan.style.display='block';
      Option1.className = "select pos1";
      sessionStorage.setItem('option','1');
      Next.style.display = 'block';
@@ -256,8 +252,6 @@
   }
   Option2.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
-     Fan.style.display='none';
-     Speaker.style.display='block';
      Option2.className = "select pos2";
      sessionStorage.setItem('option','2');
      Next.style.display = 'block';
@@ -265,7 +259,6 @@
   }
   Option3.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
-     [Speaker, Fan].forEach(i=>{i.style.display='none';});
      Option3.className = "select pos3";
      sessionStorage.setItem('option','3');
      Next.style.display = 'block';
@@ -273,7 +266,6 @@
   }
   Option4.onclick = function () {
      [Option1, Option2, Option3, Option4].forEach(i=>{i.classList.replace('select','unselect');});
-     [Speaker, Fan].forEach(i=>{i.style.display='none';});
      Option4.className = "select pos4";
      sessionStorage.setItem('option','4');
      Next.style.display = 'block';
