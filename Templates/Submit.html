@@ -63,6 +63,31 @@
       left: 1.9375%;
       z-index: 1;
     }
+    .pageflip {
+    height: 2.5%; 
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 2;
+    }
+    .pageflipback {
+      width: 8%;
+      top: 60%;
+      left: 14.922%;
+      display: block;
+    }
+    .pageflipicon {
+      width: 12%;
+      top: 54.5%;
+      left: 10.922%;
+      display: block;
+    }
+    .pageflipcolor {
+      width: 12%;
+      top: 48.9%;
+      left: 10.922%;
+      display: block;
+    }
     .rover {
       height: 62.5%;
       position: absolute;
@@ -84,6 +109,7 @@
       position: absolute;
       top: 77.778%;
       left: 27.344%;
+      font-family: 'Open Sans';
     }
     .etchbackground {
         height: 27.778%;
@@ -94,7 +120,7 @@
         left: 76.672%;
         display: none;
     }
-    .etchword {
+   .etchword {
       height: 4.8611%;
       width: 7.8125%;
       border-radius: 27%/77.143%;
@@ -106,6 +132,7 @@
       position: absolute;
       top: 7.9444%;
       left: 80.578%;
+      font-family: 'Open Sans';
     }
     .etch {
         height: 9.7222%;
@@ -144,8 +171,14 @@
        <img id="Check2" src='../Check.png' alt="Check2" class="check2" />
     <!-- Check3 -->
        <img id="Check3" src='../Check.png' alt="Check3" class="check3" />
+    <!-- Icon Page Button -->
+       <a id="Icon Page" href="IconChoice.html" class="pageflip pageflipicon"></a>
     <!-- Back Page Button -->
-       <button id="Back Page" onclick="document.location='C:/Users/LMOTT/Documents/Welcome Lobby Table/vscode/Templates/Options.html'" class="back"></button>
+       <a href="Options.html" class="back"></a>
+    <!-- Options Page Button -->
+       <a href="Options.html" class="pageflip pageflipback"></a>
+    <!-- Color Page Button -->
+       <a href="MTOdesign.html" class="pageflip pageflipcolor"></a>
     <!-- Home Page Button -->
        <button id="Home Page" onclick="document.location='https://sfwwichita.github.io/MTO/Templates/MTOdesign.html'" class="home"></button> 
     <!-- Red Rover 1-->
