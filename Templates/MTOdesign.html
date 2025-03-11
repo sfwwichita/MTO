@@ -5,25 +5,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <style>
     body {
-    background-image: url('../Table Background Next Only.svg');
+    background-image: url('C:/Users/LMOTT/Documents/Welcome Lobby Table/vscode/Table Background Next Only.svg');
     background-color: black;
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
-   .roverOG {
-    height: 69.444%;
+  .roverOG {
+    height: 88.391%;
     position: absolute;
-    left: 46%;
-    top: 20%;
+    left: 26.354%;
+    top: 10.527%;
     z-index: 0;
     display: block;
   }
   .rover {
-    height: 69.444%;
+    height: 88.391%;
     position: absolute;
-    left: 46%;
-    top: 20%;
+    left: 26.354%;
+    top: 10.527%;
     z-index: 0;
     display: none;
   }
@@ -74,7 +75,7 @@
     top: 32.444%;
     left: 30.544%;
   }
-   .red {
+  .red {
     position: absolute;
     top: 38.444%;
     left: 30.344%;
@@ -118,17 +119,25 @@
   }
   .oos {
     height: 13.889%;
+    width: 35%;
     position: absolute;
     left: 54%;
     top: 45%;
     display: none;
     z-index: 1;
+    border-radius: 13.699%/58.824%;
+    background-color: rgb(79, 72, 72);
+    border-color: black;
+    opacity: 0.9;
+    font-size: 3.5969vw;
+    color: white;
+    font-family: 'Open Sans';
   }
   .pointer {
-    height: 6.25%;
+    height: 4.75%;
     position: absolute;
-    left: 21.9%;
-    top: 47.15%;
+    left: 22.9%;
+    top: 47.75%;
     display: block;
     z-index: 1;
   }
@@ -201,12 +210,12 @@
     left: 31.344%;
     z-index: 1;
   }
-    .pageflip {
+  .pageflip {
     height: 2.5%; 
     width: 12%;
     position: absolute;
     background-color: transparent;
-    border-color: white;
+    border-color: transparent;
     top: 54.5%;
     left: 10.922%;
     z-index: 2;
@@ -268,7 +277,7 @@
   <!-- Black Dot -->
     <img id="Black Dot" src="../Black Background.png" alt="Black Dot" class="colordot blackdot"/>
   <!-- Out of Stock -->
-    <img id="Out Of Stock" src='../OutOfStock.png' alt="Out of Stock" class="oos" />
+    <button id="Out Of Stock" class="oos">OUT OF STOCK</button> 
   <!-- Pointer -->
     <img id="Pointer" src='../Pointer.png' alt="Pointer" class="pointer" />
   <!-- Button for Red-->
@@ -314,7 +323,7 @@
     var BlueButton=document.getElementById('Blue Button');
     var PurpleButton=document.getElementById('Purple Button');
     var BlackButton=document.getElementById('Black Button');
-    sessionStorage.setItem('color', 'none');
+    localStorage.setItem('color', 'none');
     RedButton.onclick= function(){
       [OutOfStock, GreyRover, RedRover, OrangeRover, YellowRover, GreenRover, BlueRover, PurpleRover, BlackRover].forEach(i=>{i.style.display='none';});
       [RedButton, OrangeButton, YellowButton, GreenButton, BlueButton, PurpleButton, BlackButton].forEach(i=>{i.classList.replace('select','unselect');});
@@ -322,7 +331,7 @@
       RedRover.style.display = 'block';
       Next.style.display = 'block';
       IconPage.style.display = 'block';
-      sessionStorage.setItem('color','Red');
+      localStorage.setItem('color','Red');
     }
     OrangeButton.onclick= function(){
       [OutOfStock, GreyRover, RedRover, OrangeRover, YellowRover, GreenRover, BlueRover, PurpleRover, BlackRover].forEach(i=>{i.style.display='none';});
@@ -331,7 +340,7 @@
       OrangeRover.style.display = 'block';
       Next.style.display = 'block';
       IconPage.style.display = 'block';
-      sessionStorage.setItem('color','Orange');
+      localStorage.setItem('color','Orange');
     }
     YellowButton.onclick= function(){
       [OutOfStock, GreyRover, RedRover, OrangeRover, YellowRover, GreenRover, BlueRover, PurpleRover, BlackRover].forEach(i=>{i.style.display='none';});
@@ -349,7 +358,7 @@
       GreenRover.style.display = 'block';
       Next.style.display = 'block';
       IconPage.style.display = 'block';
-      sessionStorage.setItem('color','Green');
+      localStorage.setItem('color','Green');
     }
     BlueButton.onclick= function(){
       [OutOfStock, GreyRover, RedRover, OrangeRover, YellowRover, GreenRover, BlueRover, PurpleRover, BlackRover].forEach(i=>{i.style.display='none';});
@@ -358,7 +367,7 @@
       BlueRover.style.display = 'block';
       Next.style.display = 'block';
       IconPage.style.display = 'block';
-      sessionStorage.setItem('color','Blue');
+      localStorage.setItem('color','Blue');
     }
     PurpleButton.onclick= function(){
       [OutOfStock, GreyRover, RedRover, OrangeRover, YellowRover, GreenRover, BlueRover, PurpleRover, BlackRover].forEach(i=>{i.style.display='none';});
@@ -376,7 +385,7 @@
       BlackRover.style.display = 'block';
       Next.style.display = 'block';
       IconPage.style.display = 'block';
-      sessionStorage.setItem('color','Black');
+      localStorage.setItem('color','Black');
     }
 
     /* Transitions */
