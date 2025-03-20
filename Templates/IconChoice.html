@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <style>
     body {
-      background-image: url('../Table Background Next and Back.svg');
+      background-image: url('C:/Users/LMOTT/Documents/Welcome Lobby Table/vscode/Table Background Next and Back.svg');
       background-color: black;
       background-attachment:fixed;
       background-repeat: no-repeat;
       background-size: cover;
     }
-.pointer {
-      height: 6.25%;
+    .pointer {
+      height: 4.75%;
       position: absolute;
-      left: 21.9%;
-      top: 52.7%;
+      left: 22.9%;
+      top: 53.3%;
       display: block;
       z-index: 1;
     }
     .check {
-      height: 2.7778%;
+      height: 2.1078%;
       position: absolute;
-      left: 21.29%;
-      top: 48.75%;
+      left: 21.59%;
+      top: 48.97%;
       display: block;
       z-index: 1;
     }
@@ -111,17 +111,6 @@
       display: block;
       font-family: 'Open Sans';
     }
-    .select {
-      height: 5.5556%;
-      width: 23.4375%;
-      border-radius: 9%/90%;
-      background-color: white;
-      border-color: white;
-      z-index: 1;
-      color: black;
-      display: block;
-      font-family: 'Open Sans';
-    }
     .pos1 {
       position: absolute;
       top: 31.944%;
@@ -166,11 +155,82 @@
         position: absolute;
         display: none;
     }
-    .etch {
-        height: 9.7222%;
+    .sector1 {
+      position: absolute;
+      top: 31%;
+      left: 31%
+    }
+    .sector2 {
+      position: absolute;
+      top: 31%;
+      left: 41%
+    }
+    .sector3 {
+      position: absolute;
+      top: 31%;
+      left: 51%
+    }
+    .sector4 {
+      position: absolute;
+      top: 52.8%;
+      left: 31%
+    }
+    .sector5 {
+      position: absolute;
+      top: 52.8%;
+      left: 41%
+    }
+    .sector6 {
+      position: absolute;
+      top: 52.8%;
+      left: 51%
+    }
+    .sector7 {
+      position: absolute;
+      top: 74.6%;
+      left: 36%
+    }
+    .sector8 {
+      position: absolute;
+      top: 74.6%;
+      left: 46%
+    }
+    .select {
+      height: 11.389%;
+      width: 7.642%;
+      border-color: white;
+      border-radius: 20%/15%;
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      z-index: 1;
+      color: white;
+      display: block;
+      font-family: 'Open Sans';
+      padding-top: 7%;
+      padding-bottom: 5%;
+    }
+    .sectorunselect {
+      height: 11.389%;
+      width: 7.642%;
+      border-color: transparent;
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      z-index: 1;
+      color: white;
+      display: block;
+      font-family: 'Open Sans';
+      padding-top: 7%;
+      padding-bottom: 5%;
+    }
+    .etch {   /* Icon Position */
+        height: 11.7222%;
         position: absolute;
-        top: 32.45%;
-        left: 78.378%;
+        top: 31.45%;
+        left: 80.378%;
         display: none;
     }
     .bti {
@@ -188,6 +248,7 @@
         display: block;
         font-family: 'Open Sans';
     }
+   
 
     /* Transitions */
     .transition-1 {
@@ -230,7 +291,7 @@
   <!-- Color Page Button -->
      <a href="MTOdesign.html" class="pageflip pageflipback"></a>
   <!-- Home Page Button -->
-     <button id="Home Page" onclick="document.location='https://sfwwichita.github.io/MTO/Templates/MTOdesign.html'" class="home"></button>
+     <button id="Home Page" onclick="document.location='C:/Users/LMOTT/Downloads/MTO Code/Templates/Table_Page.html'" class="home"></button>
   <!-- Back to Industry -->
      <button id="BTI" class="sector">Back to Industry</button>
   <!-- Industry 1 -->
@@ -246,65 +307,65 @@
   <!-- Industry 6 -->
      <button id="Industry 6" class="unselect pos6">Technology, Media & Telecommunications</button>
   <!-- Sector 1a -->
-     <button id="Sector 1a" class="sector pos1">Automotive</button>
+     <button id="Sector 1a" style="background-image: url('../Image1a.png');" class="sector sector1">Automotive</button>
   <!-- Sector 1b -->
-     <button id="Sector 1b" class="sector pos2">Consumer Products</button>
+     <button id="Sector 1b" style="background-image: url('../Image1b.png');" class="sector sector2">Consumer Products</button>
   <!-- Sector 1c -->
-     <button id="Sector 1c" class="sector pos3">Retail</button>
+     <button id="Sector 1c" style="background-image: url('../Image1c.png');" class="sector sector3">Retail</button>
   <!-- Sector 1d -->
-     <button id="Sector 1d" class="sector pos4">Transportation</button>
+     <button id="Sector 1d" style="background-image: url('../Image1d.png');" class="sector sector4">Transportation</button>
   <!-- Sector 1e -->
-     <button id="Sector 1e" class="sector pos5">Hospitality & Services</button>
+     <button id="Sector 1e" style="background-image: url('../Image1e.png');" class="sector sector5">Hospitality & Services</button>
   <!-- Sector 1f-->
-     <button id="Sector 1f" class="sector pos6">Wholesale & Distribution</button>
+     <button id="Sector 1f" style="background-image: url('../Image1f.png');" class="sector sector6">Wholesale & Distribution</button>
   <!-- Sector 2a-->
-     <button id="Sector 2a" class="sector pos1">Industrial Products</button>
+     <button id="Sector 2a" style="background-image: url('../Image2a.png');" class="sector sector1">Industrial Products</button>
   <!-- Sector 2b-->
-     <button id="Sector 2b" class="sector pos2">Construction</button>
+     <button id="Sector 2b" style="background-image: url('../Image2b.png');" class="sector sector2">Construction</button>
   <!-- Sector 2c-->
-     <button id="Sector 2c" class="sector pos3">Power</button>
+     <button id="Sector 2c" style="background-image: url('../Image2c.png');" class="sector sector3">Power</button>
   <!-- Sector 2d-->
-     <button id="Sector 2d" class="sector pos4">Gas & Chemicals</button>
+     <button id="Sector 2d" style="background-image: url('../Image2d.png');" class="sector sector4">Gas & Chemicals</button>
   <!-- Sector 2e-->
-     <button id="Sector 2e" class="sector pos5">Oil</button>
+     <button id="Sector 2e" style="background-image: url('../Image2e.png');" class="sector sector5">Oil</button>
   <!-- Sector 2f-->
-     <button id="Sector 2f" class="sector pos6">Renewables & Energy</button>
+     <button id="Sector 2f" style="background-image: url('../Image2f.png');" class="sector sector6">Renewables & Energy</button>
   <!-- Sector 2g-->
-     <button id="Sector 2g" class="sector pos7">Utilities</button>
+     <button id="Sector 2g" style="background-image: url('../Image2g.png');" class="sector sector7">Utilities</button>
   <!-- Sector 2h-->
-     <button id="Sector 2h" class="sector pos8">Mining & Metals</button>
+     <button id="Sector 2h" style="background-image: url('../Image2h.png');" class="sector sector8">Mining & Metals</button>
   <!-- Sector 3a-->
-     <button id="Sector 3a" class="sector pos1">Banking & Capital Markets</button>
+     <button id="Sector 3a" style="background-image: url('../Image3a.png');" class="sector sector1">Banking & Capital Markets</button>
   <!-- Sector 3b-->
-     <button id="Sector 3b" class="sector pos2">Insurance</button>
+     <button id="Sector 3b" style="background-image: url('../Image3b.png');" class="sector sector2">Insurance</button>
   <!-- Sector 3c-->
-     <button id="Sector 3c" class="sector pos3">Investment Management</button>
+     <button id="Sector 3c" style="background-image: url('../Image3c.png');" class="sector sector3">Investment Management</button>
   <!-- Sector 3d-->
-     <button id="Sector 3d" class="sector pos4">Real Estate</button>
+     <button id="Sector 3d" style="background-image: url('../Image3d.png');" class="sector sector5">Real Estate</button>
   <!-- Sector 4a -->
-     <button id="Sector 4a" class="sector pos1">Civil, State & Local Government</button>
+     <button id="Sector 4a" style="background-image: url('../Image4a.png');" class="sector sector1">Civil, State & Local Government</button>
   <!-- Sector 4b -->
-     <button id="Sector 4b" class="sector pos2">Justice</button>
+     <button id="Sector 4b" style="background-image: url('../Image4b.png');" class="sector sector2">Justice</button>
   <!-- Sector 4c -->
-     <button id="Sector 4c" class="sector pos3">Defense & Security</button>
+     <button id="Sector 4c" style="background-image: url('../Image4c.png');" class="sector sector3">Defense & Security</button>
   <!-- Sector 4d -->
-     <button id="Sector 4d" class="sector pos4">Health & Human Services</button>
+     <button id="Sector 4d" style="background-image: url('../Image4d.png');" class="sector sector4">Health & Human Services</button>
   <!-- Sector 4e -->
-     <button id="Sector 4e" class="sector pos5">International Donor Organizations</button>
+     <button id="Sector 4e" style="background-image: url('../Image4e.png');" class="sector sector5">International Donor Organizations</button>
   <!-- Sector 4f-->
-     <button id="Sector 4f" class="sector pos6">Higher Education</button>
+     <button id="Sector 4f" style="background-image: url('../Image4f.png');" class="sector sector6">Higher Education</button>
   <!-- Sector 5a -->
-     <button id="Sector 5a" class="sector pos1">Health Care Providers</button>
+     <button id="Sector 5a" style="background-image: url('../Image5a.png');" class="sector sector1">Health Care Providers</button>
   <!-- Sector 5b -->
-     <button id="Sector 5b" class="sector pos2">Health Plans</button>
+     <button id="Sector 5b" style="background-image: url('../Image5b.png');" class="sector sector2">Health Plans</button>
   <!-- Sector 5c -->
-     <button id="Sector 5c" class="sector pos3">Life Sciences</button>
+     <button id="Sector 5c" style="background-image: url('../Image5c.png');" class="sector sector3">Life Sciences</button>
   <!-- Sector 6a -->
-     <button id="Sector 6a" class="sector pos1">Technology</button>
+     <button id="Sector 6a" style="background-image: url('../Image6a.png');" class="sector sector1">Technology</button>
   <!-- Sector 6b -->
-     <button id="Sector 6b" class="sector pos2">Media & Entertainment</button>
+     <button id="Sector 6b" style="background-image: url('../Image6b.png');" class="sector sector2">Media & Entertainment</button>
   <!-- Sector 6c -->
-     <button id="Sector 6c" class="sector pos3">Telecommunications</button>
+     <button id="Sector 6c" style="background-image: url('../Image6c.png');" class="sector sector3">Telecommun- ications</button>
   <!-- Red Rover -->
      <img id="Red Rover" src='../Rover Top View - Red.png' alt="Red Rover" class="rover"/>
   <!-- Orange Rover -->
@@ -387,7 +448,7 @@
      var GreenRover=document.getElementById('Green Rover');
      var BlueRover=document.getElementById('Blue Rover');
      var BlackRover=document.getElementById('Black Rover');
-     let Color = sessionStorage.getItem('color');
+     let Color = localStorage.getItem('color');
      if (Color === 'Red') {
         RedRover.style.display = 'block';
      } else if (Color === "Orange") {
@@ -399,7 +460,7 @@
      } else {
         BlackRover.style.display = 'block';
      }
-     sessionStorage.setItem('icon','none');
+     localStorage.setItem('icon','none');
      /* Title Images */
      var InudstryPrompt=document.getElementById('Industry Prompt');
      var SectorPrompt=document.getElementById('Sector Prompt');
@@ -478,12 +539,12 @@
      /* Industry 1 */
      Industry1.onclick = function() {
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
-        [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('sector','unselect');});
+        [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
-          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('unselect','sector');});
+          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('sectorunselect','sector');});
           [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','sector');});
           [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('sector','unselect');});
           [Image1a, Image1b, Image1c, Image1d, Image1e, Image1f].forEach(i=>{i.style.display='none';});
@@ -495,55 +556,55 @@
         } 
         Sector1a.onclick = function () {
           [Image1b, Image1c, Image1d, Image1e, Image1f].forEach(i=>{i.style.display='none';});
-          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image1a.style.display= 'block';
-          Sector1a.className = "select pos1";
-          sessionStorage.setItem('icon','21');
+          Sector1a.className = "select sector1";
+          localStorage.setItem('icon','21');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector1b.onclick = function () {
           [Image1a, Image1c, Image1d, Image1e, Image1f].forEach(i=>{i.style.display='none';});
-          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image1b.style.display= 'block';
-          Sector1b.className = "select pos2";
-          sessionStorage.setItem('icon','22');
+          Sector1b.className = "select sector2";
+          localStorage.setItem('icon','22');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector1c.onclick = function () {
           [Image1a, Image1b, Image1d, Image1e, Image1f].forEach(i=>{i.style.display='none';});
-          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image1c.style.display= 'block';
-          Sector1c.className = "select pos3";
-          sessionStorage.setItem('icon','23');
+          Sector1c.className = "select sector3";
+          localStorage.setItem('icon','23');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector1d.onclick = function () {
           [Image1a, Image1b, Image1c, Image1e, Image1f].forEach(i=>{i.style.display='none';});
-          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image1d.style.display= 'block';
-          Sector1d.className = "select pos4";
-          sessionStorage.setItem('icon','24');
+          Sector1d.className = "select sector4";
+          localStorage.setItem('icon','24');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector1e.onclick = function () {
           [Image1a, Image1b, Image1c, Image1d, Image1f].forEach(i=>{i.style.display='none';});
-          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image1e.style.display= 'block';
-          Sector1e.className = "select pos5";
-          sessionStorage.setItem('icon','25');
+          Sector1e.className = "select sector5";
+          localStorage.setItem('icon','25');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector1f.onclick = function () {
           [Image1a, Image1b, Image1c, Image1d, Image1e].forEach(i=>{i.style.display='none';});
-          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image1f.style.display= 'block';
-          Sector1f.className = "select pos6";
-          sessionStorage.setItem('icon','26');
+          Sector1f.className = "select sector6";
+          localStorage.setItem('icon','26');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
@@ -551,12 +612,12 @@
      /* Industry 2 */
      Industry2.onclick = function() {
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
-        [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('sector','unselect');});
+        [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('unselect','sector');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('sectorunselect','sector');});
           [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sector');});
           [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('sector','unselect');});
           [Image2a, Image2b, Image2c, Image2d, Image2e, Image2f, Image2g, Image2h].forEach(i=>{i.style.display='none';});
@@ -568,73 +629,73 @@
         } 
         Sector2a.onclick = function () {
           [Image2b, Image2c, Image2d, Image2e, Image2f, Image2g, Image2h].forEach(i=>{i.style.display='none';});
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image2a.style.display= 'block';
-          Sector2a.className = "select pos1";
-          sessionStorage.setItem('icon','27');
+          Sector2a.className = "select sector1";
+          localStorage.setItem('icon','27');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector2b.onclick = function () {
           [Image2a, Image2c, Image2d, Image2e, Image2f, Image2g, Image2h].forEach(i=>{i.style.display='none';});
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image2b.style.display= 'block';
-          Sector2b.className = "select pos2";
-          sessionStorage.setItem('icon','28');
+          Sector2b.className = "select sector2";
+          localStorage.setItem('icon','28');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector2c.onclick = function () {
           [Image2a, Image2b, Image2d, Image2e, Image2f, Image2g, Image2h].forEach(i=>{i.style.display='none';});
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image2c.style.display= 'block';
-          Sector2c.className = "select pos3";
-          sessionStorage.setItem('icon','29');
+          Sector2c.className = "select sector3";
+          localStorage.setItem('icon','29');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector2d.onclick = function () {
           [Image2a, Image2b, Image2c, Image2e, Image2f, Image2g, Image2h].forEach(i=>{i.style.display='none';});
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image2d.style.display= 'block';
-          Sector2d.className = "select pos4";
-          sessionStorage.setItem('icon','30');
+          Sector2d.className = "select sector4";
+          localStorage.setItem('icon','30');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector2e.onclick = function () {
           [Image2a, Image2b, Image2c, Image2d, Image2f, Image2g, Image2h].forEach(i=>{i.style.display='none';});
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image2e.style.display= 'block';
-          Sector2e.className = "select pos5";
-          sessionStorage.setItem('icon','31');
+          Sector2e.className = "select sector5";
+          localStorage.setItem('icon','31');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector2f.onclick = function () {
           [Image2a, Image2b, Image2c, Image2d, Image2e, Image2g, Image2h].forEach(i=>{i.style.display='none';});
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image2f.style.display= 'block';
-          Sector2f.className = "select pos6";
-          sessionStorage.setItem('icon','32');
+          Sector2f.className = "select sector6";
+          localStorage.setItem('icon','32');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector2g.onclick = function () {
           [Image2a, Image2b, Image2c, Image2d, Image2e, Image2f, Image2h].forEach(i=>{i.style.display='none';});
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image2g.style.display= 'block';
-          Sector2g.className = "select pos7";
-          sessionStorage.setItem('icon','33');
+          Sector2g.className = "select sector7";
+          localStorage.setItem('icon','33');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector2h.onclick = function () {
           [Image2a, Image2b, Image2c, Image2d, Image2e, Image2f, Image2g].forEach(i=>{i.style.display='none';});
-          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image2h.style.display= 'block';
-          Sector2h.className = "select pos8";
-          sessionStorage.setItem('icon','34');
+          Sector2h.className = "select sector8";
+          localStorage.setItem('icon','34');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
@@ -642,12 +703,12 @@
       /* Industry 3 */
       Industry3.onclick = function() {
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
-        [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('sector','unselect');});
+        [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
-          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('unselect','sector');});
+          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('sectorunselect','sector');});
           [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','sector');});
           [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('sector','unselect');});
           [Image3a, Image3b, Image3c, Image3d].forEach(i=>{i.style.display='none';});
@@ -659,37 +720,37 @@
         } 
         Sector3a.onclick = function () {
           [Image3b, Image3c, Image3d].forEach(i=>{i.style.display='none';});
-          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image3a.style.display= 'block';
-          Sector3a.className = "select pos1";
-          sessionStorage.setItem('icon','35');
+          Sector3a.className = "select sector1";
+          localStorage.setItem('icon','35');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector3b.onclick = function () {
           [Image3a, Image3c, Image3d].forEach(i=>{i.style.display='none';});
-          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image3b.style.display= 'block';
-          Sector3b.className = "select pos2";
-          sessionStorage.setItem('icon','36');
+          Sector3b.className = "select sector2";
+          localStorage.setItem('icon','36');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector3c.onclick = function () {
           [Image3a, Image3b, Image3d].forEach(i=>{i.style.display='none';});
-          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image3c.style.display= 'block';
-          Sector3c.className = "select pos3";
-          sessionStorage.setItem('icon','37');
+          Sector3c.className = "select sector3";
+          localStorage.setItem('icon','37');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector3d.onclick = function () {
           [Image3a, Image3b, Image3c,].forEach(i=>{i.style.display='none';});
-          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image3d.style.display= 'block';
-          Sector3d.className = "select pos4";
-          sessionStorage.setItem('icon','38');
+          Sector3d.className = "select sector5";
+          localStorage.setItem('icon','38');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
@@ -697,12 +758,12 @@
      /* Industry 4 */
      Industry4.onclick = function() {
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
-        [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('sector','unselect');});
+        [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
-          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('unselect','sector');});
+          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('sectorunselect','sector');});
           [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','sector');});
           [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('sector','unselect');});
           [Image4a, Image4b, Image4c, Image4d, Image4e, Image4f].forEach(i=>{i.style.display='none';});
@@ -714,55 +775,55 @@
         } 
         Sector4a.onclick = function () {
           [Image4b, Image4c, Image4d, Image4e, Image4f].forEach(i=>{i.style.display='none';});
-          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image4a.style.display= 'block';
-          Sector4a.className = "select pos1";
-          sessionStorage.setItem('icon','39');
+          Sector4a.className = "select sector1";
+          localStorage.setItem('icon','39');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector4b.onclick = function () {
           [Image4a, Image4c, Image4d, Image4e, Image4f].forEach(i=>{i.style.display='none';});
-          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image4b.style.display= 'block';
-          Sector4b.className = "select pos2";
-          sessionStorage.setItem('icon','40');
+          Sector4b.className = "select sector2";
+          localStorage.setItem('icon','40');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector4c.onclick = function () {
           [Image4a, Image4b, Image4d, Image4e, Image4f].forEach(i=>{i.style.display='none';});
-          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image4c.style.display= 'block';
-          Sector4c.className = "select pos3";
-          sessionStorage.setItem('icon','41');
+          Sector4c.className = "select sector3";
+          localStorage.setItem('icon','41');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector4d.onclick = function () {
           [Image4a, Image4b, Image4c, Image4e, Image4f].forEach(i=>{i.style.display='none';});
-          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image4d.style.display= 'block';
-          Sector4d.className = "select pos4";
-          sessionStorage.setItem('icon','42');
+          Sector4d.className = "select sector4";
+          localStorage.setItem('icon','42');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector4e.onclick = function () {
           [Image4a, Image4b, Image4c, Image4d, Image4f].forEach(i=>{i.style.display='none';});
-          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image4e.style.display= 'block';
-          Sector4e.className = "select pos5";
-          sessionStorage.setItem('icon','43');
+          Sector4e.className = "select sector5";
+          localStorage.setItem('icon','43');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector4f.onclick = function () {
           [Image4a, Image4b, Image4c, Image4d, Image4e].forEach(i=>{i.style.display='none';});
-          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image4f.style.display= 'block';
-          Sector4f.className = "select pos6";
-          sessionStorage.setItem('icon','44');
+          Sector4f.className = "select sector6";
+          localStorage.setItem('icon','44');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
@@ -770,12 +831,12 @@
      /* Industry 5 */
      Industry5.onclick = function() {
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
-        [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('sector','unselect');});
+        [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
-          [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('unselect','sector');});
+          [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('sectorunselect','sector');});
           [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('select','sector');});
           [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('sector','unselect');});
           [Image5a, Image5b, Image5c].forEach(i=>{i.style.display='none';});
@@ -787,28 +848,28 @@
         } 
         Sector5a.onclick = function () {
           [Image5b, Image5c].forEach(i=>{i.style.display='none';});
-          [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image5a.style.display= 'block';
-          Sector5a.className = "select pos1";
-          sessionStorage.setItem('icon','45');
+          Sector5a.className = "select sector1";
+          localStorage.setItem('icon','45');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector5b.onclick = function () {
           [Image5a, Image5c].forEach(i=>{i.style.display='none';});
-          [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image5b.style.display= 'block';
-          Sector5b.className = "select pos2";
-          sessionStorage.setItem('icon','46');
+          Sector5b.className = "select sector2";
+          localStorage.setItem('icon','46');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector5c.onclick = function () {
           [Image5a, Image5b].forEach(i=>{i.style.display='none';});
-          [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image5c.style.display= 'block';
-          Sector5c.className = "select pos3";
-          sessionStorage.setItem('icon','47');
+          Sector5c.className = "select sector3";
+          localStorage.setItem('icon','47');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
@@ -816,12 +877,12 @@
      /* Industry 6 */
      Industry6.onclick = function() {
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
-        [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('sector','unselect');});
+        [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
-          [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('unselect','sector');});
+          [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('sectorunselect','sector');});
           [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('select','sector');});
           [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('sector','unselect');});
           [Image6a, Image6b, Image6c].forEach(i=>{i.style.display='none';});
@@ -833,32 +894,32 @@
         } 
         Sector6a.onclick = function () {
           [Image6b, Image6c].forEach(i=>{i.style.display='none';});
-          [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image6a.style.display= 'block';
-          Sector6a.className = "select pos1";
-          sessionStorage.setItem('icon','48');
+          Sector6a.className = "select sector1";
+          localStorage.setItem('icon','48');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector6b.onclick = function () {
           [Image6a, Image6c].forEach(i=>{i.style.display='none';});
-          [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image6b.style.display= 'block';
-          Sector6b.className = "select pos2";
-          sessionStorage.setItem('icon','49');
+          Sector6b.className = "select sector2";
+          localStorage.setItem('icon','49');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
         Sector6c.onclick = function () {
           [Image6a, Image6b].forEach(i=>{i.style.display='none';});
-          [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('select','unselect');});
+          [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('select','sectorunselect');});
           Image6c.style.display= 'block';
-          Sector6c.className = "select pos3";
-          sessionStorage.setItem('icon','50');
+          Sector6c.className = "select sector3";
+          localStorage.setItem('icon','50');
           Next.style.display = 'block';
           OptionsPage.style.display = 'block';
         }
-     }
+     }  
       /* Transitions */
       window.onload = () => {
       const transition_el = document.querySelector('.transition');
