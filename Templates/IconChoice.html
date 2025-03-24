@@ -88,17 +88,17 @@
     }
     .prompt {
       border-radius: 13.699%/58.824%;
-      background-color: black;
+      background-color: transparent;
       border-color: transparent;
       z-index: 0;
       color: white;
       display: block;
       font-family: 'Open Sans';
       width: 17%;
-      scale: 1.9;
+      scale: 1.4;
       position: absolute;
       top: 25.444%;
-      left: 36.844%
+      left: 33.844%
     }
     .unselect {
       height: 5.5556%;
@@ -235,18 +235,26 @@
     }
     .bti {
         height: 3.1778%;
-        width: 9.375%;
-        border-radius: 22.5%/135%;
+        width: 12.075%;
         position: absolute;
-        top: 20.033%;
-        left: 54.6875%;
+        top: 21.533%;
+        left: 34.5875%;
         display: block;
-        background-color: black;
-        border-color: white;
+        background-color: transparent;
+        border-color: transparent;
         z-index: 1;
-        color: white;
+        color: grey;
         display: block;
         font-family: 'Open Sans';
+        font-weight: bold;
+    }
+    .arrow {
+      height: 2.1778%;
+      position: absolute;
+      top: 22.133%;
+      left: 34.5875%;
+      display: block;
+      z-index: 2;
     }
    
 
@@ -293,7 +301,9 @@
   <!-- Home Page Button -->
      <button id="Home Page" onclick="document.location='C:/Users/LMOTT/Downloads/MTO Code/Templates/Table_Page.html'" class="home"></button>
   <!-- Back to Industry -->
-     <button id="BTI" class="sector">Back to Industry</button>
+     <button id="BTI" class="sector">BACK TO INDUSTRY</button>
+  <!-- Back to Industry Arrow -->
+     <img id="BTI Arrow" src='../Back Arrow.png' alt="Arrow" class="sector"/>
   <!-- Industry 1 -->
      <button id="Industry 1" class="unselect pos1">Consumer</button>
   <!-- Industry 2 -->
@@ -377,9 +387,9 @@
   <!-- Black Rover -->
      <img id="Black Rover" src='../Rover Top View - Black.png' alt="Black Rover" class="rover"/>
   <!-- Industry Prompt -->
-     <button id="Industry Prompt" class="prompt">SELECT PREFFERED INDUSTRY</button>
+     <button id="Industry Prompt" class="prompt">Select preferred industry.</button>
   <!-- Sector Prompt -->
-     <button id="Sector Prompt" class="prompt">SELECT PREFFERED SECTOR</button>
+     <button id="Sector Prompt" class="prompt">Select preferred sector.</button>
   <!-- Image 1a -->
      <img id="Image 1a" src="../Image1a.png" alt="Automotive" class="etch"/>
   <!-- Image 1b -->
@@ -496,6 +506,7 @@
      var Image6a=document.getElementById('Image 6a');
      var Image6b=document.getElementById('Image 6b');
      var Image6c=document.getElementById('Image 6c');
+     var BTIArrow=document.getElementById('BTI Arrow');
      /* Establish Buttons */
      var Industry1=document.getElementById('Industry 1');
      var Industry2=document.getElementById('Industry 2');
@@ -541,6 +552,7 @@
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
         [Sector1a, Sector1b, Sector1c, Sector1d, Sector1e, Sector1f].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
+        BTIArrow.className = 'arrow';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
@@ -553,6 +565,7 @@
           InudstryPrompt.style.display = 'block';
           SectorPrompt.style.display = 'none';
           BTI.className = "sector";
+          BTIArrow.className = 'sector';
         } 
         Sector1a.onclick = function () {
           [Image1b, Image1c, Image1d, Image1e, Image1f].forEach(i=>{i.style.display='none';});
@@ -614,6 +627,7 @@
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
         [Sector2a, Sector2b, Sector2c, Sector2d, Sector2e, Sector2f, Sector2g, Sector2h].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
+        BTIArrow.className = 'arrow';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
@@ -626,6 +640,7 @@
           InudstryPrompt.style.display = 'block';
           SectorPrompt.style.display = 'none';
           BTI.className = "sector";
+          BTIArrow.className = 'sector';
         } 
         Sector2a.onclick = function () {
           [Image2b, Image2c, Image2d, Image2e, Image2f, Image2g, Image2h].forEach(i=>{i.style.display='none';});
@@ -705,6 +720,7 @@
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
         [Sector3a, Sector3b, Sector3c, Sector3d].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
+        BTIArrow.className = 'arrow';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
@@ -717,6 +733,7 @@
           InudstryPrompt.style.display = 'block';
           SectorPrompt.style.display = 'none';
           BTI.className = "sector";
+          BTIArrow.className = 'sector';
         } 
         Sector3a.onclick = function () {
           [Image3b, Image3c, Image3d].forEach(i=>{i.style.display='none';});
@@ -760,6 +777,7 @@
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
         [Sector4a, Sector4b, Sector4c, Sector4d, Sector4e, Sector4f].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
+        BTIArrow.className = 'arrow';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
@@ -772,6 +790,7 @@
           InudstryPrompt.style.display = 'block';
           SectorPrompt.style.display = 'none';
           BTI.className = "sector";
+          BTIArrow.className = 'sector';
         } 
         Sector4a.onclick = function () {
           [Image4b, Image4c, Image4d, Image4e, Image4f].forEach(i=>{i.style.display='none';});
@@ -833,6 +852,7 @@
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
         [Sector5a, Sector5b, Sector5c].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
+        BTIArrow.className = 'arrow';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
@@ -845,6 +865,7 @@
           InudstryPrompt.style.display = 'block';
           SectorPrompt.style.display = 'none';
           BTI.className = "sector";
+          BTIArrow.className = 'sector';
         } 
         Sector5a.onclick = function () {
           [Image5b, Image5c].forEach(i=>{i.style.display='none';});
@@ -879,6 +900,7 @@
         [Industry1, Industry2, Industry3, Industry4, Industry5, Industry6].forEach(i=>{i.classList.replace('unselect','sector');});
         [Sector6a, Sector6b, Sector6c].forEach(i=>{i.classList.replace('sector','sectorunselect');});
         BTI.className = 'bti';
+        BTIArrow.className = 'arrow';
         InudstryPrompt.style.display = 'none';
         SectorPrompt.style.display = 'block';
         BTI.onclick = function () {
@@ -891,6 +913,7 @@
           InudstryPrompt.style.display = 'block';
           SectorPrompt.style.display = 'none';
           BTI.className = "sector";
+          BTIArrow.className = 'sector';
         } 
         Sector6a.onclick = function () {
           [Image6b, Image6c].forEach(i=>{i.style.display='none';});
@@ -931,3 +954,4 @@
 
   </script> 
 </body>
+
