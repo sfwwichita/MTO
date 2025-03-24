@@ -5,41 +5,49 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <style>
     body {
-      background-image: url('../Table Background Back Only.svg');
+      background-image: url('C:/Users/LMOTT/Documents/Welcome Lobby Table/vscode/Table Background Back Only.svg');
       background-color: black;
       background-attachment:fixed;
       background-repeat: no-repeat;
       background-size: cover;
+      overflow: hidden;
+    }
+    .container {
+      height: 87%;
+      width: 83%;
+      position: absolute;
+      left: 28.7%;
+      top: 9%;
     }
     .pointer {
-      height: 6.25%;
+      height: 4.75%;
       position: absolute;
-      left: 22.1%;
-      top: 63.9%;
+      left: 22.9%;
+      top: 64.4%;
       display: block;
       z-index: 1;
     }
     .check1 {
-      height: 2.7778%;
+      height: 2.1078%;
       position: absolute;
-      left: 21.4%;
-      top: 48.75%;
+      left: 21.59%;
+      top: 48.97%;
       display: block;
       z-index: 1;
     }
     .check2 {
-      height: 2.7778%;
+      height: 2.1078%;
       position: absolute;
-      left: 21.4%;
-      top: 54.25%;
+      left: 21.59%;
+      top: 54.55%;
       display: block;
       z-index: 1;
     }
     .check3 {
-      height: 2.7778%;
+      height: 2.1078%;
       position: absolute;
-      left: 21.4%;
-      top: 59.85%;
+      left: 21.59%;;
+      top: 60.12%;
       display: block;
       z-index: 1;
     }
@@ -50,7 +58,7 @@
       background-color: transparent;
       border-color: transparent;
       top: 91.756%;
-      left: 17.40625%;
+      left: 17.00625%;
       z-index: 1;
     }
     .home {
@@ -89,56 +97,84 @@
       display: block;
     }
     .rover {
-      height: 62.5%;
+      height: 69.444%;
       position: absolute;
-      left: 40%;
-      top: 25%;
+      left: 46%;
+      top: 20%;
       z-index: 0;
       display: none;
     }
-    .submit {
-      height: 9.7222%;
-      width: 25.391%;
-      border-radius: 9.2308%/42.857%;
+    .submit {  /* Submit Button */
+      height: 8.778%;
+      width: 14.125%;
+      border-radius: 15%/30%;
       background-color: black;
       border-color: white;
       z-index: 1;
       color: white;
       display: block;
-      font-size: 1.7969vw;
+      font-size: 1.0969vw;
       position: absolute;
-      top: 77.778%;
-      left: 27.344%;
+      top: 80.5%;
+      left: 29%;
+      padding-left: 3.5%;
+      text-align: left;
       font-family: 'Open Sans';
     }
-    .etchbackground {
-        height: 27.778%;
-        width: 15.625%;
-        border-radius: 50%;
+    .arrow {
+      height: 4.7778%;
+      position: absolute;
+      top: 82.5001%;
+      left: 29%;
+      display: block;
+      z-index: 2;
+    }
+    .final {
+        height: 3.1778%;
+        width: 7.075%;
         position: absolute;
-        top: 13.5%;
-        left: 76.672%;
+        top: 65.5075%;
+        left: 29%;
+        display: block;
+        background-color: transparent;
+        border-color: transparent;
+        z-index: 1;
+        color: grey;
+        display: block;
+        font-family: 'Open Sans';
+        font-weight: bold;
+    }
+    .question {
+        height: 10.1778%;
+        width: 10.075%;
+        position: absolute;
+        top: 69.0038%;
+        left: 29%;
+        display: block;
+        background-color: transparent;
+        border-color: transparent;
+        z-index: 1;
+        font-size: 1.3969vw;
+        color: white;
+        display: block;
+        text-align: left;
+        font-family: 'Open Sans';
+        font-weight: bold;
+    }
+    .etchbackground {   /* Big color circle */
+        height: 15.389%;
+        width: 7.642%;
+        border-radius: 20%/15%;
+        position: absolute;
+        top: 47.8%;
+        left: 29%;
         display: none;
     }
-   .etchword {
-      height: 4.8611%;
-      width: 7.8125%;
-      border-radius: 27%/77.143%;
-      background-color: black;
-      border-color: transparent;
-      z-index: 1;
-      color: white;
-      display: block;
-      position: absolute;
-      top: 7.9444%;
-      left: 80.578%;
-      font-family: 'Open Sans';
-    }
     .etch {
-        height: 9.7222%;
+        width: 7.642%;
         position: absolute;
-        top: 22.528%;
-        left: 79.172%;
+        top: 48.7016%;
+        left: 29%;
         display: none;
     }
     /* Transitions */
@@ -163,6 +199,7 @@
 </head>
 <body>
     <div class="transition transition-1 is-active"></div>
+    <div id="Container" class="container"></div> 
     <!-- Pointer -->
        <img id="Pointer" src='../Pointer.png' alt="Pointer" class="pointer" />
     <!-- Check1 -->
@@ -180,47 +217,7 @@
     <!-- Color Page Button -->
        <a href="MTOdesign.html" class="pageflip pageflipcolor"></a>
     <!-- Home Page Button -->
-       <button id="Home Page" onclick="document.location='https://sfwwichita.github.io/MTO/Templates/MTOdesign.html'" class="home"></button> 
-    <!-- Red Rover 1-->
-       <img id="Red Rover 1" src='../Final Red Rover 1.png' alt="Red Rover 1" class="rover"/>
-    <!-- Red Rover 2-->
-       <img id="Red Rover 2" src='../Final Red Rover 2.png' alt="Red Rover 2" class="rover"/>
-    <!-- Red Rover 3-->
-       <img id="Red Rover 3" src='../Final Red Rover 3.png' alt="Red Rover 3" class="rover"/>
-    <!-- Red Rover 4-->
-       <img id="Red Rover 4" src='../Final Red Rover 4.png' alt="Red Rover 4" class="rover"/>
-    <!-- Orange Rover 1-->
-       <img id="Orange Rover 1" src='../Final Orange Rover 1.png' alt="Orange Rover 1" class="rover"/>
-    <!-- Orange Rover 2-->
-       <img id="Orange Rover 2" src='../Final Orange Rover 2.png' alt="Orange Rover 2" class="rover"/>
-    <!-- Orange Rover 3-->
-       <img id="Orange Rover 3" src='../Final Orange Rover 3.png' alt="Orange Rover 3" class="rover"/>
-    <!-- Orange Rover 4-->
-       <img id="Orange Rover 4" src='../Final Orange Rover 4.png' alt="Orange Rover 4" class="rover"/>
-    <!-- Green Rover 1-->
-       <img id="Green Rover 1" src='../Final Green Rover 1.png' alt="Green Rover 1" class="rover"/>
-    <!-- Green Rover 2-->
-       <img id="Green Rover 2" src='../Final Green Rover 2.png' alt="Green Rover 2" class="rover"/>
-    <!-- Green Rover 3-->
-       <img id="Green Rover 3" src='../Final Green Rover 3.png' alt="Green Rover 3" class="rover"/>
-    <!-- Green Rover 4-->
-       <img id="Green Rover 4" src='../Final Green Rover 4.png' alt="Green Rover 4" class="rover"/>
-    <!-- Blue Rover 1-->
-       <img id="Blue Rover 1" src='../Final Blue Rover 1.png' alt="Blue Rover 1" class="rover"/>
-    <!-- Blue Rover 2-->
-       <img id="Blue Rover 2" src='../Final Blue Rover 2.png' alt="Blue Rover 2" class="rover"/>
-    <!-- Blue Rover 3-->
-       <img id="Blue Rover 3" src='../Final Blue Rover 3.png' alt="Blue Rover 3" class="rover"/>
-    <!-- Blue Rover 4-->
-       <img id="Blue Rover 4" src='../Final Blue Rover 4.png' alt="Blue Rover 4" class="rover"/>
-    <!-- Black Rover 1-->
-       <img id="Black Rover 1" src='../Final Black Rover 1.png' alt="Black Rover 1" class="rover"/>
-    <!-- Black Rover 2-->
-       <img id="Black Rover 2" src='../Final Black Rover 2.png' alt="Black Rover 2" class="rover"/>
-    <!-- Black Rover 3-->
-       <img id="Black Rover 3" src='../Final Black Rover 3.png' alt="Black Rover 3" class="rover"/>
-    <!-- Black Rover 4-->
-       <img id="Black Rover 4" src='../Final Black Rover 4.png' alt="Black Rover 4" class="rover"/>
+       <button id="Home Page" onclick="document.location='C:/Users/LMOTT/Downloads/MTO Code/Templates/Table_Page.html'" class="home"></button> 
     <!-- Red Background -->
        <img id="Red Background" src='../Red Background.png' alt="Red Background" class="etchbackground"/>
     <!-- Orange Background -->
@@ -231,8 +228,6 @@
        <img id="Blue Background" src='../Blue Background.png' alt="Blue Background" class="etchbackground"/>
     <!-- Black Background -->
        <img id="Black Background" src='../Black Background.png' alt="Black Background" class="etchbackground"/>
-    <!-- Icon Text -->
-       <button id="Icon Text" class="etchword">Icon</button>
     <!-- Image 1a -->
        <img id="Image 1a" src="../Image1a.png" alt="Automotive" class="etch"/>
     <!-- Image 1b -->
@@ -294,35 +289,16 @@
     <!-- Image 6c -->
        <img id="Image 6c" src="../Image6c.png" alt="Telecommunications" class="etch"/>  
     <!-- Sent to Floor -->
-       <button id="Submit" class="submit">Send Order to Factory Floor</button>
+       <button id="Submit" class="submit">Send order to the Factory Floor</button>
+    <!-- Sent to Floor -->
+       <button id="Final Step" class="final">FINAL STEP</button>
+    <!-- Question -->
+       <button id="Question" class="question">Ready for production?</button>
+    <!-- Submit Arrow -->
+       <img id="Submit Arrow" src='../Submit Arrow.png' alt="Arrow" class="arrow"/>
 </body>
 <script>
   /* Rover & Icon Display */
-  var RedRover1=document.getElementById('Red Rover 1');
-  var RedRover2=document.getElementById('Red Rover 2');
-  var RedRover3=document.getElementById('Red Rover 3');
-  var RedRover4=document.getElementById('Red Rover 4');
-  var OrangeRover1=document.getElementById('Orange Rover 1');
-  var OrangeRover2=document.getElementById('Orange Rover 2');
-  var OrangeRover3=document.getElementById('Orange Rover 3');
-  var OrangeRover4=document.getElementById('Orange Rover 4');
-  var GreenRover1=document.getElementById('Green Rover 1');
-  var GreenRover2=document.getElementById('Green Rover 2');
-  var GreenRover3=document.getElementById('Green Rover 3');
-  var GreenRover4=document.getElementById('Green Rover 4');
-  var BlueRover1=document.getElementById('Blue Rover 1');
-  var BlueRover2=document.getElementById('Blue Rover 2');
-  var BlueRover3=document.getElementById('Blue Rover 3');
-  var BlueRover4=document.getElementById('Blue Rover 4');
-  var BlackRover1=document.getElementById('Black Rover 1');
-  var BlackRover2=document.getElementById('Black Rover 2');
-  var BlackRover3=document.getElementById('Black Rover 3');
-  var BlackRover4=document.getElementById('Black Rover 4');
-  var RedBackground=document.getElementById('Red Background');
-  var OrangeBackground=document.getElementById('Orange Background');
-  var GreenBackground=document.getElementById('Green Background');
-  var BlueBackground=document.getElementById('Blue Background');
-  var BlackBackground=document.getElementById('Black Background');
   var Image1a=document.getElementById('Image 1a');
   var Image1b=document.getElementById('Image 1b');
   var Image1c=document.getElementById('Image 1c');
@@ -353,66 +329,8 @@
   var Image6a=document.getElementById('Image 6a');
   var Image6b=document.getElementById('Image 6b');
   var Image6c=document.getElementById('Image 6c');
-  let Color = sessionStorage.getItem('color');
-  let option = sessionStorage.getItem('option');
-     if (Color === 'Red') {
-        RedBackground.style.display = 'block';
-        if (option === '1') {
-          RedRover1.style.display = 'block';
-        } else if (option === '2') {
-          RedRover2.style.display = 'block';
-        } else if (option === '3') {
-          RedRover3.style.display = 'block';
-        } else {
-          RedRover4.style.display = 'block';
-        }
-     } else if (Color === 'Orange') {
-        OrangeBackground.style.display = 'block';
-        if (option === '1') {
-          OrangeRover1.style.display = 'block';
-        } else if (option === '2') {
-          OrangeRover2.style.display = 'block';
-        } else if (option === '3') {
-          OrangeRover3.style.display = 'block';
-        } else {
-          OrangeRover4.style.display = 'block';
-        }
-     } else if (Color === 'Green') {
-        GreenBackground.style.display = 'block';
-        if (option === '1') {
-          GreenRover1.style.display = 'block';
-        } else if (option === '2') {
-          GreenRover2.style.display = 'block';
-        } else if (option === '3') {
-          GreenRover3.style.display = 'block';
-        } else {
-          GreenRover4.style.display = 'block';
-        }
-     } else if (Color === 'Blue') {
-        BlueBackground.style.display = 'block';
-        if (option === '1') {
-          BlueRover1.style.display = 'block';
-        } else if (option === '2') {
-          BlueRover2.style.display = 'block';
-        } else if (option === '3') {
-          BlueRover3.style.display = 'block';
-        } else {
-          BlueRover4.style.display = 'block';
-        }
-     } else {
-        BlackBackground.style.display = 'block';
-        if (option === '1') {
-          BlackRover1.style.display = 'block';
-        } else if (option === '2') {
-          BlackRover2.style.display = 'block';
-        } else if (option === '3') {
-          BlackRover3.style.display = 'block';
-        } else {
-          BlackRover4.style.display = 'block';
-        }
-     }
-  let Icon = sessionStorage.getItem('icon');
-    if (Icon === '21') {Image1a.style.display = 'block';}
+  let Icon = localStorage.getItem('icon'); /* Rover Etching Variable */
+     if (Icon === '21') {Image1a.style.display = 'block';}
      else if (Icon === '22') {Image1b.style.display = 'block';}
      else if (Icon === '23') {Image1c.style.display = 'block';}
      else if (Icon === '24') {Image1d.style.display = 'block';}
@@ -442,6 +360,398 @@
      else if (Icon === '48') {Image6a.style.display = 'block';}
      else if (Icon === '49') {Image6b.style.display = 'block';}
      else {Image6c.style.display = 'block';}
+</script>
+
+<script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+    import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
+    
+    // Add scene and Camera
+    var container = document.getElementById('Container');
+    document.body.appendChild(container);
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(30, 1.75, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
+    renderer.setSize(container.offsetWidth, container.offsetHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    container.appendChild(renderer.domElement);
+    //Camera Zoom, may change for each Rover
+    camera.position.z = 60;
+    camera.position.x = 0;
+    camera.position.y = 0;
+
+    window.addEventListener('resize', function () {
+      renderer.setSize(container.offsetWidth, container.offsetHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      container.appendChild(renderer.domElement);
+      controls.maxPolarAngle = 1.02;
+      controls.minPolarAngle = 1.02;
+      controls.maxAzimuthAngle = -0.76;
+      controls.minAzimuthAngle = -0.76;
+      window.addEventListener("load", controlsOn);
+      function controlsOn() {
+        controls.autoRotate = true;
+        controls.maxPolarAngle = Infinity;
+        controls.minPolarAngle = -3.14;
+        controls.maxAzimuthAngle = Infinity;controls.minAzimuthAngle = -3.14;
+      }
+      camera.position.z = 60;
+      camera.position.x = 0;
+      camera.position.y = 0;
+
+    });
+
+    // Use OrbitControls 
+    var controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.25;
+    controls.enableZoom = false;
+    controls.enablePan = false;
+    controls.maxPolarAngle = 1.02;
+    controls.minPolarAngle = 1.02;
+    controls.maxAzimuthAngle = -0.76;
+    controls.minAzimuthAngle = -0.76;
+    window.addEventListener("load", controlsOn);
+    function controlsOn() {
+      controls.autoRotate = true;
+      controls.maxPolarAngle = Infinity;
+      controls.minPolarAngle = -3.14;
+      controls.maxAzimuthAngle = Infinity;
+      controls.minAzimuthAngle = -3.14;
+    }
+
+    // Add lights
+    const ambientLight = new THREE.AmbientLight(0x404040, 10.0); 
+    var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(30, 100%, 75%)'), 3.0);
+    keyLight.position.set(50, 50, 50);
+    var fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 100%, 75%)'), 2.5);
+    fillLight.position.set(-50, 50, 50);
+    scene.add(ambientLight);
+    scene.add(camera);
+    camera.add(keyLight);
+    camera.add(fillLight);
+
+  var RedBackground=document.getElementById('Red Background');
+  var OrangeBackground=document.getElementById('Orange Background');
+  var GreenBackground=document.getElementById('Green Background');
+  var BlueBackground=document.getElementById('Blue Background');
+  var BlackBackground=document.getElementById('Black Background');
+  let Color = localStorage.getItem('color'); /* Rover Color Variable */
+  let option = localStorage.getItem('option'); /* Rover Kit Variable */
+     if (Color === 'Red') {
+        RedBackground.style.display = 'block';
+        if (option === '1') {
+          var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Red_Fan_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Red_Fan_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+         
+        } else if (option === '2') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Red_Speaker_Rover.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Red_Speaker_Rover.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+          
+        } else if (option === '3') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Red_Transistor_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Red_Transistor_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Red_3D_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Red_3D_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        }
+     } else if (Color === 'Orange') {
+        OrangeBackground.style.display = 'block';
+        if (option === '1') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Orange_Fan_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Orange_Fan_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else if (option === '2') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Orange_Speaker_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Orange_Speaker_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else if (option === '3') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Orange_Transistor_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Orange_Transistor_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Orange_3D_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Orange_3D_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        }
+     } else if (Color === 'Green') {
+        GreenBackground.style.display = 'block';
+        if (option === '1') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Green_Fan_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Green_Fan_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else if (option === '2') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Green_Speaker_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Green_Speaker_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else if (option === '3') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Green_Transistor_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Green_Transistor_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Green_3D_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Green_3D_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        }
+     } else if (Color === 'Blue') {
+        BlueBackground.style.display = 'block';
+        if (option === '1') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Blue_Fan_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Blue_Fan_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else if (option === '2') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Blue_Speaker_Rover.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Blue_Speaker_Rover.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else if (option === '3') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Blue_Transistor_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Blue_Transistor_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Blue_3D_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Blue_3D_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        }
+     } else {
+        BlackBackground.style.display = 'block';
+        if (option === '1') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Black_Fan_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Black_Fan_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else if (option === '2') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Black_Speaker_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Black_Speaker_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else if (option === '3') {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Black_Transistor_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Black_Transistor_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        } else {
+         var mtlLoader = new MTLLoader();
+          mtlLoader.setPath('./');
+          mtlLoader.load('Black_3D_Kit.mtl', (materials) => {
+            materials.preload();
+            var objLoader = new OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.setPath('./');  
+            objLoader.load('Black_3D_Kit.obj', function(object) {
+              object.position.set(-11,-6.4,-6);
+              object.rotation.set(-1.57,0,0);
+              scene.add(object);
+            });
+          });
+        }
+     }
+     // Animation loop
+    var animate = function() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    };
+
+
+    animate();
+
+</script>
+
+ 
+<script>
   /* Transitions */
   window.onload = () => {
       const transition_el = document.querySelector('.transition');
